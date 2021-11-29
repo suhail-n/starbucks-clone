@@ -1,2 +1,5 @@
 # starbucks-clone
-clone of the starbucks homepage
+
+> A simple clone of the starbucks home page.
+
+[Demo Page](https://suhail-n.github.io/starbucks-clone/index)
