@@ -1,0 +1,13 @@
+.box {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.box-a .box-inner {
+  margin: 0 auto;
+  max-width: 55%;
+}
+
+.box-a a {
+  color: #fff;
+}
