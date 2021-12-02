@@ -2,51 +2,58 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/constants.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/box.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/card.css">
+
     <title>Starbucks Coffee Company</title>
 </head>
 
 <body>
     <nav class="navbar">
         <div class="navbar-container">
-
-            <div class="navbar-brand"><a href="#">
-                    <img src="img/logo.svg" alt="Starbucks Logo">
-                </a></div>
+            <div class="navbar-brand">
+                <a href="#"><img src="img/logo.svg" alt="Starbucks Logo" /></a>
+            </div>
             <ul class="navbar-nav navbar-nav-left">
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Rewards</a></li>
-                <li><a href="#">Gift Cards</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Menu</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Rewards</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Gift Cards</a></li>
             </ul>
             <ul class="navbar-nav navbar-nav-right">
-                <li><a href="#"><img src="img/marker.svg" alt="find a store"> <span>Find a store</span></a></li>
-                <li><button class='btn btn-outline-dark'>Sign in</button></li>
-                <li><button class="btn btn-dark">Join now</button></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <span class='nav-link-icon'><img src="img/marker.svg" alt="Find a store"></span>
+                        <span>Find a store</span>
+                    </a>
+                </li>
+                <li class="nav-item"><button href="#" class="btn btn-outline-dark">Sign In</button></li>
+                <li class="nav-item"><button href="#" class="btn btn-dark">Join now</button></li>
             </ul>
         </div>
     </nav>
     <main>
-        <!-- Box A -->
-        <section class="box box-a bg-primary text-center py-md">
-            <div class="box-inner">
-                <h2 class="text-xl">
-                    JINGLE ALL THE WAY TO FREE FAVORITES
-                </h2>
-                <p class="text-md">
-                    Join Starbucks® Rewards for delicious deals & exclusive offers.
-                    <a href="#">Learn More</a>
-                </p>
+        <section class="box box-a bg-primary py-md">
+            <div class="box-inner text-center">
+                <h2 class='text-xl'>Jingle all the way to free favorites</h2>
+                <p class='text-md'>Join Starbucks® Rewards for delicious deals & exclusive offers. <a href="#">Learn
+                        more</a></p>
             </div>
         </section>
-        <!-- Box B -->
-        <section class=" box box-b bg-secondary text-center py-md">
+        <section class="box my-md box-b bg-secondary text-center py-md">
             <div class="box-inner">
                 <div class="card">
-                    <img src="img/gift-card.png" alt="starbucks gift card" class="card-img">
-                    <div class="card-body">
+                    <div class="card-img">
+                        <img src="img/gift-card.png" alt="starbucks gift card">
+                    </div>
+                    <div class="card-body text-center">
                         <h2 class="text-xl">
                             BLACK FRIDAY OFFER
                         </h2>
@@ -55,12 +62,12 @@
                             Starbucks eGift.
                             Limit one per person. While supplies last.
                         </p>
-                        <button class='btn btn-outline-white-transparent'>Buy eGift</button>
+                        <button class='btn btn-outline-light-transparent'>Buy eGift</button>
                     </div>
                 </div>
             </div>
         </section>
-        <section class=" box box-c bg-secondary text-center py-md">
+        <section class="box box-c bg-secondary text-center py-md">
             <div class="box-inner">
                 <div class="card">
                     <div class="card-body">
@@ -70,16 +77,20 @@
                         <p class="text-md">
                             Treat yourself to a festive Sugar Plum Cheese Danish with a nicely spiced sugar-plum spread.
                         </p>
-                        <button class='btn btn-outline-white-transparent'>Order now </button>
+                        <button class='btn btn-outline-light-transparent'>Order now </button>
                     </div>
-                    <img src="img/cheese-danish.png" alt="starbucks cheese danish" class="card-img">
+                    <div class="card-img">
+                        <img src="img/cheese-danish.png" alt="starbucks cheese danish">
+                    </div>
                 </div>
             </div>
         </section>
-        <section class=" box box-d bg-other text-center py-md">
+        <section class="box box-d bg-other text-center my-md">
             <div class="box-inner">
                 <div class="card">
-                    <img src="img/starbucks-visa.png" alt="starbucks rewards visa" class="card-img">
+                    <div class="card-img">
+                        <img src="img/starbucks-visa.png" alt="starbucks rewards visa">
+                    </div>
                     <div class="card-body">
                         <h2 class="text-xl">
                             MERRY MOMENT
@@ -90,7 +101,7 @@
                             the Starbucks® Rewards Visa® Card. Plus your Stars won’t expire – an exclusive Starbucks
                             benefit for cardmembers. Now that’s Super Starifying.
                         </p>
-                        <button class='btn btn-outline-black-transparent'>Order now </button>
+                        <button class='btn btn-outline-dark-transparent'>Order now </button>
                     </div>
                 </div>
             </div>

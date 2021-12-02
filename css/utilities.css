@@ -1,0 +1,49 @@
+/* utilities */
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 100%;
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+.bg-secondary {
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+
+.bg-other {
+  background-color: #d4e9e2;
+}
+
+/* text */
+.text-center {
+  text-align: center;
+}
+
+.text-xl {
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.text-md {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* padding */
+.py-md {
+  padding: 2rem 0;
+}
+
+/* margin */
+.my-md {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,16 @@
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.card-img {
+  flex-basis: max(50%, 300px);
+}
+.card-img img {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  flex-basis: max(50%, 436px);
+}
