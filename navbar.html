@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Tutorial</title>
+    <style>
+        .hamburger {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 25px;
+            width: 30px;
+            cursor: pointer;
+        }
+
+        .hamburger-bar {
+            width: 100%;
+            background-color: #151515;
+            height: 2px;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .hamburger:hover {
+            justify-content: center;
+        }
+
+        .hamburger:hover .hamburger-bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger:hover .hamburger-bar:nth-child(1) {
+            transform: translateY(2px) rotate(45deg);
+        }
+
+        .hamburger:hover .hamburger-bar:nth-child(3) {
+            transform: translateY(-2px) rotate(-45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hamburger">
+        <div class="hamburger-bar"></div>
+        <div class="hamburger-bar"></div>
+        <div class="hamburger-bar"></div>
+    </div>
+</body>
+
+</html>

@@ -4,7 +4,7 @@
   align-items: center;
 }
 .card-img {
-  flex-basis: max(50%, 300px);
+  flex: 1 max(50%, 300px);
 }
 .card-img img {
   width: 100%;
@@ -12,5 +12,5 @@
 }
 
 .card-body {
-  flex-basis: max(50%, 436px);
+  flex: 1 max(50%, 436px);
 }
