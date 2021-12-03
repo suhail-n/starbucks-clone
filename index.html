@@ -30,12 +30,35 @@
             <ul class="navbar-nav navbar-nav-right">
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                        <span class='nav-link-icon'><img src="img/marker.svg" alt="Find a store"></span>
+                        <div class='nav-link-icon'><img src="img/marker.svg" alt="Find a store"></div>
                         <span>Find a store</span>
                     </a>
                 </li>
                 <li class="nav-item"><button href="#" class="btn btn-outline-dark">Sign In</button></li>
                 <li class="nav-item"><button href="#" class="btn btn-dark">Join now</button></li>
+            </ul>
+            <div class="hamburger" id="hamburger-menu">
+                <div class="hamburger-bar"></div>
+                <div class="hamburger-bar"></div>
+                <div class="hamburger-bar"></div>
+            </div>
+        </div>
+        <div class="navbar-mobile">
+            <ul class="mobile-navbar-nav">
+                <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">Menu</a></li>
+                <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">Rewards</a></li>
+                <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">Gift Cards</a></li>
+                <hr>
+                <li class="mobile-nav-item mobile-nav-btns">
+                    <button href="#" class="btn btn-outline-dark">Sign In</button>
+                    <button href="#" class="btn btn-dark">Join now</button>
+                </li>
+                <li class="movile-nav-item">
+                    <a href="#" class="mobile-nav-link">
+                        <div class='nav-link-icon'><img src="img/marker.svg" alt="Find a store"></div>
+                        <span>Find a store</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -107,6 +130,32 @@
             </div>
         </section>
     </main>
+    <!-- <script src="script.js"></script> -->
+    <script>
+        (function () {
+
+            console.log("script loaded")
+            const hamburger = document.querySelector("#hamburger-menu");
+            function toggleHamburgerClick() {
+
+            }
+            hamburger.addEventListener('click', (event) => {
+                document.querySelector("#hamburger-menu").classList.toggle('hamburger-open');
+                // event.target.classList.toggle("hamburger-open")
+                // this.classList.toggle('hamburger-open');
+                const body = document.querySelector("body");
+                body.classList.toggle("no-scroll");
+                const navbarMobile = document.querySelector(".navbar-mobile");
+                navbarMobile.classList.toggle("open")
+            })
+
+            document.querySelector("main").addEventListener('click', event => {
+                document.querySelector("body").classList.remove('no-scroll');
+                document.querySelector("#hamburger-menu").classList.remove('hamburger-open');
+                document.querySelector(".navbar-mobile").classList.remove('open')
+            })
+        })()
+    </script>
 </body>
 
 </html>

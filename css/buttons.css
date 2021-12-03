@@ -40,3 +40,9 @@
 .btn-outline-dark-transparent:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
+
+@media (max-width: 830px) {
+  .btn {
+    margin: 1rem 0;
+  }
+}
